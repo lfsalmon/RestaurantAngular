@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box
+}
+html,body{
+  height: 100%;
+  
+}
+
+body{
+  display: block;
+  place-items: center;
+  margin: 0;
+  padding: 0 24px;
+  
+  background-image: url(assets/Hexagon.svg);
+  
+  background-position: center;
+  background-size: cover;
+  color:#ffffff;
+  font-family: "Ecludi Circular A";
+  
+}
+@media (width>=500px)
+{
+  body{padding: 0;}
+}
+.content-body
+{   
+   
+    width: 100%;
+    position: absolute;
+    height: -webkit-fill-available;
+}
+
+/* Styles of general tables**/
+
+.div-shadow
+{
+  box-shadow: 10px 9px 20px rgba(0, 0, 0, 0.562);
+}
+.div-table
+{
+  padding: 4rem;
+}
+.table
+{
+  color:white;
+}
+.acction-buttons
+{
+  width: auto;
+
+}
+

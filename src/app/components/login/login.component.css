@@ -1,0 +1,132 @@
+
+
+.login {
+  width: 90%;
+  padding: 70px 30px 44px;
+  border-radius: 22px;
+  text-align: center;
+  background: rgba(238, 236, 255, 0.349);  
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  
+}
+@media (width>=450px){
+  .login{ width: 380px}
+}
+.avatar{
+  margin:0 auto 16px;
+  border-radius: 50%;
+  background: 
+    linear-gradient(-45deg,"#157ael" , "#c7alff");
+  padding: 2px;  
+  width: 120px;
+  height: 120px;
+
+}
+.avatar > img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border:4px solid #161616;
+
+}
+.login > h2
+{
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+.login > h3
+{
+  color: rgba(255,255,255,0.38);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 30px;
+}
+
+.login-form
+{
+  display:grid;
+  gap:16px;
+  place-items: center;
+  width: 100%;
+  
+  margin: 0;
+}
+
+
+
+.md-textbox 
+{
+  width: 100%;
+  position: relative;
+}
+.md-textbox :is(label,svg){
+  position: absolute;
+  top :50%;
+  translate: 0 -50%;
+  pointer-events: none;
+  color:#3b3b3b;
+  transition: 0.3s;
+}
+.md-textbox>label
+{
+  left: 10px;
+  translate: 0 -50%;
+  padding: 4px 8px;
+}
+.md-textbox>svg
+{
+  right: 16px;
+  width: 30px;
+}
+.md-textbox > input
+{
+  height: 56px;
+  width: 100%;
+  padding-left: 16px;
+  border :0;
+  border-bottom: 1px solid #3b3b3b;
+  
+  background: transparent;
+  color:#f8f8f8;
+  outline: none;
+  
+}
+
+
+.md-textbox>input:focus, input:active
+{
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  
+}
+
+.md-textbox> :is(input:focus) ~svg
+{
+  color :#ffffff;
+}
+.md-textbox> :is(input:focus, .has-value) ~label
+{
+
+
+  /*background: rgb(83, 80, 80);  
+  color:rgb(255,255,255/85%);*/
+  color :#ffffff;
+  translate: 0 -46px;
+}
+
+.bg-login-image {
+  background: url("https://img.freepik.com/free-vector/vintage-restaurant-menu_23-2147491098.jpg?w=826&t=st=1683058464~exp=1683059064~hmac=ec9f23622fe253f73d56eb2c8645068cc62f406b26c491a6769551245d65baf6");
+  background-position: center;
+  background-size: cover;
+}
+
+
+@keyframes slideaway {
+  from { display: none;  transform: translateY(-40px); opacity: 0;}
+  to { transform: translateY(0px); opacity: 1;}
+}
+
